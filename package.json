@@ -1,9 +1,9 @@
 {
-  "name": "educator-js-codespace-template",
+  "name": "me",
   "version": "1.0.0",
-  "description": "Educator JS Codespace Template",
+  "description": "A showcase of my skillset",
   "source": "src/index.html",
-  "homepage": "https://github.com/microsoft/codespaces-teaching-template-js#readme",
+  "homepage": "https://github.com/C-o-m-o-n/me",
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
@@ -13,12 +13,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/microsoft/codespaces-teaching-template-js.git"
+    "url": "git+https://github.com/C-o-m-o-n/me.git"
   },
-  "author": "Microsoft",
+  "author": "Collins Omondi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/microsoft/codespaces-teaching-template-js/issues"
+    "url": "https://github.com/C-o-m-o-n/me/issues"
   },
   "dependencies": {
     "react": "^18.2.0",

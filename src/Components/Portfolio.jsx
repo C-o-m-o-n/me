@@ -38,20 +38,18 @@ const projectList = [
   },
   {
     title: "VoteKe",
-    description:
-      "An election management mobile application using react-native.",
+    description:"An election management mobile application using react-native.",
     url: "https://github.com/C-o-m-o-n/voteKE",
   },
   {
     title: "My Resume Site",
     description:
       "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+    url: "https://github.com/C-o-m-o-n"
   },
   {
     title: "fileSearchCli",
-    description:
-      "a python script that helps you search files and directories in the terminal.",
+    description: "a python script that helps you search files and directories in the terminal.",
     url: "https://github.com/C-o-m-o-n/fileSearchCli",
   },
 ];
