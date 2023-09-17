@@ -21,6 +21,7 @@ const projectList = [
     url: "https://github.com/C-o-m-o-n/voteKE",
   },
   {
+
     title: "Gephok",
     description:
       "Created website for a company called gephok, based in Kisumu, using python flask.",
@@ -36,6 +37,10 @@ const projectList = [
     title: "BizConnect",
     description:
       "Created a mobile app that allows people from a local area to work on simple time-sensitive tasks that does not require any formal qualifications.",
+
+    title: "My Resume Site",
+    description: "Includes my coding experience and design abilities.",
+
     url: "https://github.com/C-o-m-o-n"
   },
   {
