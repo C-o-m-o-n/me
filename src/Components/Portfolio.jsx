@@ -1,34 +1,13 @@
-/**
- * Portfolio component
- *
- * Highlights some of  your creations. These can be designs, websites,
- * open source contributions, articles you've written and more.
- *
- * This is a great area for you to to continually add to and refine
- * as you continue to learn and create.
- */
 
 import React from "react";
 
-/**
- * Desk image
- *
- * Below is a sample desk image. Feel free to update this to an image of your choice,
- * updating below imageAltText to string that represents what you see in that image.
- *
- * Need an image? Check out https://unsplash.com to download a photo you
- * freely use on your site.
- */
+
+ 
 import image from "../images/me1.jpg";
 
 const imageAltText = "desktop with books and laptop";
 
-/**
- * Project list
- *
- * An array of objects that will be used to display for your project
- * links section. Below is a sample, update to reflect links you'd like to highlight.
- */
+
 const projectList = [
   {
     title: "online Blood donation webapp",
@@ -42,9 +21,21 @@ const projectList = [
     url: "https://github.com/C-o-m-o-n/voteKE",
   },
   {
-    title: "My Resume Site",
+    title: "Gephok",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
+      "Created website for a company called gephok, based in Kisumu, using python flask.",
+    url: "https://github.com/C-o-m-o-n/Gephok"
+  },
+  {
+    title: "Online flower shop",
+    description:
+      "Created an online flower shop for a friend using pythoon django.",
+    url: "https://github.com/C-o-m-o-n/flowerGirl"
+  },
+  {
+    title: "BizConnect",
+    description:
+      "Created a mobile app that allows people from a local area to work on simple time-sensitive tasks that does not require any formal qualifications.",
     url: "https://github.com/C-o-m-o-n"
   },
   {
@@ -62,7 +53,7 @@ const Portfolio = () => {
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
             src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
+            style={{ height: "90%", width: "100%", objectFit: "cover", animation: "1s ease-out 0s 1 slideIn"}}
             alt={imageAltText}
           />
         </div>

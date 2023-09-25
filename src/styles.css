@@ -4,6 +4,15 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
 
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 html,
 body {
   font-family: "Montserrat", sans-serif;
@@ -12,6 +21,7 @@ body {
   overflow-x: hidden;
   padding: 0;
   width: 100%;
+  scroll-behavior: smooth;
 }
 
 div#main {
@@ -101,7 +111,9 @@ a {
 a:hover {
   color: #4e567e;
 }
-
+.education-a:hover {
+  color: royalblue;
+}
 .container {
   display: grid;
   grid-gap: 20px;
