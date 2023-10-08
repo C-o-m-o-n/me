@@ -1,7 +1,7 @@
 import React from 'react'
 import { BiMap } from "react-icons/bi";
 
-import image from "../images/me1.jpg";
+import image from "../images/me2.jpeg";
 
 function Education() {
   const imageAltText = 'education'
@@ -35,13 +35,13 @@ function Education() {
         },
       ];
   return (
-    <section className='padding' id='education'>
+    <section className='padding' style={{}} id='education'>
         <h2 style={{textAlign:'center'}}>Education</h2>
         <div style={{display: 'flex', flexDirection:  'row', paddingTop: '3rem'}}>
         
         <div className="container" >
           {projectList.map((project) => (
-            <div className="box" key={project.title} style={{backgroundColor: '#4e567e', color: 'white'}}>
+            <div className="box" key={project.title} style={{ }}>
               <a href={project.url} target="_blank" className='education-a' rel="noopener noreferrer">
                 <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
               </a>
@@ -55,7 +55,7 @@ function Education() {
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
             src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover", animation: "1s ease-out 0s 1 slideIn", borderRadius: 20}}
+            style={{ height: "90%", width: "100%", objectFit: "cover", animation: "1s ease-out 0s 1 slideIn",}}
             alt={imageAltText}
           />
         </div>
