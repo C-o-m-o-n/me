@@ -13,7 +13,7 @@ const projectList = [
     title: "online Blood donation webapp",
     description:
       "Welcome to the Kisumu National Polytechnic Blood Bank project! This is an open-source initiative aimed at promoting blood donation and saving lives through a user-friendly website.",
-    url: "https://tknpbloodbank.com",
+    url: "https://tknpbloodbank.azurewebsites.net",
   },
   {
     title: "VoteKe",
