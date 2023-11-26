@@ -15,7 +15,7 @@ import Portfolio from "./Components/Portfolio";
 import "./styles.css";
 import Education from "./Components/Education";
 import Awards from "./Components/Awards";
-
+import Experience from "./Components/Experience";
 /**
  * This object represents your information. The project is set so that you
  * only need to update these here, and values are passed a properties to the
@@ -49,6 +49,7 @@ const App = () => {
       <Portfolio />
       <Education />
       <Awards />
+      <Experience />
       <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
     </div>
   );
