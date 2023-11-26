@@ -55,6 +55,11 @@ const Awards = () => {
             style={{ height: "100%", width: "100%", objectFit: "cover", animation: "1s ease-out 0s 1 slideIn"}}
             alt={imageAltText}
           />
+           <img
+            src={image}
+            style={{ height: "100%", width: "100%", objectFit: "cover", animation: "1s ease-out 0s 1 slideIn"}}
+            alt={imageAltText}
+          />
         </div>
         <div className="container">
           {projectList.map((project) => (
