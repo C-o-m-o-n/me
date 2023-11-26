@@ -10,7 +10,7 @@ const projectList = [
     title: "STEM,CODING and ROBOTICS",
     description:
       "",
-    image_url: "https://github.com/C-o-m-o-n/me/blob/main/src/images/click4tech.png",
+    image_url: "https://raw.githubusercontent.com/C-o-m-o-n/me/main/src/images/click4tech.png",
   },
   {
     title: "Google serverless web development",
@@ -28,7 +28,7 @@ const projectList = [
     title: "Code week Kenya 2023",
     description:
       "",
-    image_url: "https://github.com/C-o-m-o-n/me/blob/main/src/images/code-jika.png"
+    image_url: "https://raw.githubusercontent.com/C-o-m-o-n/me/main/src/images/code-jika.png"
   },
   {
     title: "GDSC core team member",
