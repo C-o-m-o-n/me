@@ -3,7 +3,7 @@ import { BiMap } from "react-icons/bi";
 
 import image from "../images/me2.jpeg";
 
-function Education() {
+function Experience() {
   const imageAltText = 'education'
 
     const projectList = [
@@ -36,7 +36,7 @@ function Education() {
       ];
   return (
     <section className='padding' style={{color: "white", backgroundColor: "#727d84",}} id='education'>
-        <h2 style={{textAlign:'center'}}>Education</h2>
+        <h2 style={{textAlign:'center'}}>Experience</h2>
         <div style={{display: 'flex', flexDirection:  'row', paddingTop: '3rem'}}>
         
         <div className="container" >
@@ -66,4 +66,4 @@ function Education() {
   )
 }
 
-export default Education
+export default Experience

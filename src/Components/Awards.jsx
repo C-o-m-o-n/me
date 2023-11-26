@@ -1,6 +1,8 @@
 
 import React from "react";
 import image from "../images/award-image.jpg";
+import image2 from "../images/red-laptop.jpg"
+import bg_image from "../images/motion-background.jpg";
 
 const imageAltText = "desktop with books and laptop";
 
@@ -47,6 +49,7 @@ const projectList = [
 const Awards = () => {
   return (
     <section className="padding" id="awards">
+        <img className="background" src={bg_image} alt={imageAltText} />
       <h2 style={{ textAlign: "center" }}>Awards</h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
@@ -56,7 +59,7 @@ const Awards = () => {
             alt={imageAltText}
           />
            <img
-            src={image}
+            src={image2}
             style={{ height: "100%", width: "100%", objectFit: "cover", animation: "1s ease-out 0s 1 slideIn"}}
             alt={imageAltText}
           />
