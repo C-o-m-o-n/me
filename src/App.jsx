@@ -1,58 +1,27 @@
-/**
- * Application component
- *
- * To contain application wide settings, routes, state, etc.
- */
+/* eslint-disable react/no-unknown-property */
+// import { useState } from 'react'
+import { Canvas } from '@react-three/fiber'
+// import { useRef } from 'react'
+import './App.css'
+import Cube from './components/Cube'
+// import { BoxGeometry } from 'three'
 
-import React from "react";
+function App() {
+  // const [count, setCount] = useState(0)
 
-import About from "./Components/About";
-import Footer from "./Components/Footer";
-import Header from "./Components/Header";
-import Home from "./Components/Home";
-import Portfolio from "./Components/Portfolio";
-
-import "./styles.css";
-import Education from "./Components/Education";
-import Awards from "./Components/Awards";
-import Experience from "./Components/Experience";
-/**
- * This object represents your information. The project is set so that you
- * only need to update these here, and values are passed a properties to the
- * components that need that information.
- *
- * Update the values below with your information.
- *
- * If you don't have one of the social sites listed, leave it as an empty string.
- */
-const siteProps = {
-  name: "Collins Omondi.",
-  title: "backend developer",
-  email: "comon928@gmail.com",
-  gitHub: "C-o-m-o-n",
-  // instagram: "microsoft",
-  linkedIn: "c-o-m-o-n",
-  medium: "comon928",
-  twitter: "C_o_m_o_n",
-  youTube: "comon928",
-};
-
-const primaryColor = "#4E567E";
-const secondaryColor = "#D2F1E4";
-
-const App = () => {
   return (
-    <div id="main">
-      <Header />
-      <Home name={siteProps.name} title={siteProps.title} />
-      <About />
-      <Portfolio />
-      <Education />
-      <Awards />
-      <Experience />
-      <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
-    </div>
-  );
-};
+    <Canvas>
+      <directionalLight position={[0, 0, 5]} intensity={0.5}/>
+      <ambientLight intensity={0.1} />
+{/* <group position={[0, -1, 0]}>
+      <Cube  position={[1, 0, 0]} size={[1, 1, 1]}  color="green" />
+      <Cube  position={[-1, 2, 0]} size={[1, 1, 1]}  color="blue" />
+      <Cube  position={[1, 2, 0]} size={[1, 1, 1]}  color="red" />
+      <Cube  position={[-1, 0, 0]} size={[1, 1, 1]}  color="yellow" />
+</group> */}
+      <Cube  position={[0, 0, 0]} size={[1, 1, 1]}  color="yellow" />
+    </Canvas>
+  )
+}
 
-export default App;
+export default App
