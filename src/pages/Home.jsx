@@ -5,7 +5,7 @@ import Button from '../components/Button'
 import About from '../components/About'
 import Repos from '../components/Repos'
 import { FaRegHeart } from "react-icons/fa";
-import { IoCallOutline } from "react-icons/io5";
+import { IoCallOutline, IoMailOutline } from "react-icons/io5";
 import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 import { CiLocationOn } from "react-icons/ci";
 import { FaGithub, FaXTwitter,FaLinkedin,FaDiscord, } from "react-icons/fa6";
@@ -22,7 +22,10 @@ function Home({ myProfile}) {
         <h1 className='bold text-xl'>{myProfile.name}</h1>
         <div className='bold flex flex-row justifuy-center items-center'>
             <HiOutlineBuildingOffice2 size={24}/>
-            <p className='bold m-4'>{myProfile.company}</p>
+            <a href='https://www.uamuzi.org'>
+            <p className='hover:text-[blue] hover:underline bold m-4'>{myProfile.company}</p>
+            </a>
+
         </div>
         <div className='bold flex flex-row  items-center'>
             <CiLocationOn size={24}/>
@@ -32,8 +35,8 @@ function Home({ myProfile}) {
         <div className='m-4 flex-row justify-center items-center '>
             <p className='bold '>{myProfile.bio}</p>
             <div>
-            <Button button_icon={<IoCallOutline />} button_name="Contact me"/>
-            <Button button_icon={<FaRegHeart />} button_name="sponsor me"/>
+            <Button button_icon={<IoMailOutline />} button_link='mailto:comon928@gmail.com' button_name="Contact me"/>
+            <Button button_icon={<FaRegHeart />} button_link='https://github.com/sponsors/C-o-m-o-n' button_name="sponsor me"/>
             </div>
 
         </div>
@@ -42,20 +45,20 @@ function Home({ myProfile}) {
 
         <div className='bold flex flex-row  items-center'>
             <FaGithub className='m-3'  size={24}/>
-            <p className='hidden md:block bold m-4'>Github</p>
+            <p className='hidden md:block bold m-4'><a className='hover:text-[blue] hover:underline' href='https://github.com/C-o-m-o-n'>Github</a></p>
         </div>
 
         <div className='bold flex flex-row  items-center'>
             <FaXTwitter className='m-3' size={24}/>
-            <p className='hidden md:block bold m-4'>Twitter</p>
+            <p className='hidden md:block bold m-4'><a className='hover:text-[blue] hover:underline' href='https://x.com/C_o_m_o_n'>Twitter</a></p>
         </div>
         <div className='bold flex flex-row  items-center'>
             <FaLinkedin className='m-3' size={24}/>
-            <p className='hidden md:block bold m-4'>LinkeIn</p>
+            <p className='hidden md:block bold m-4'><a className='hover:text-[blue] hover:underline' href='https://linkedin.com/c-o-m-o-n'>LinkeIn</a></p>
         </div>
         <div className='bold flex flex-row  items-center'>
             <FaDiscord className='m-3' size={24}/>
-            <p className='hidden md:block bold m-4'>Discord</p>
+            <p className='hidden md:block bold m-4'><a className='hover:text-[blue] hover:underline' href='https://discord.gg.com/eqSU46Y7xW'>Discord</a></p>
         </div>
 </div>
 
