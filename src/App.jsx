@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unknown-property */
 import { useEffect, useState } from 'react'
-import { useRef } from 'react'
+// import { useRef } from 'react'
 import './App.css'
 import Home from './pages/Home'
 
@@ -12,7 +12,7 @@ function App() {
     .then(res => res.json())
     .then(res => {
       setMyProfile(res) 
-      console.log(res)
+      // console.log(res)
     }
     )
   }, [])

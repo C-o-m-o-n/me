@@ -1,15 +1,29 @@
+/* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
-import React from 'react'
+import {useState} from 'react'
 import Button from '../components/Button'
 import { FaRegHeart } from "react-icons/fa";
 import { IoCallOutline } from "react-icons/io5";
 import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 import { CiLocationOn } from "react-icons/ci";
 import { FaGithub, FaXTwitter,FaLinkedin,FaDiscord, } from "react-icons/fa6";
+import { RiGitRepositoryCommitsLine } from "react-icons/ri";
+
 
 function Home({ myProfile}) {
+    const [repos, setRepos] = useState([])
+
+    const LoadRepos = () => {
+        fetch('https://api.github.com/users/C-o-m-o-n/repos')
+        .then(res => res.json())
+        .then(res => {
+            setRepos(res)
+          console.log(res)
+        }
+        )
+      }
   return (
-    <div className='flex items-center flex-row'>
+    <div className='flex  flex-row'>
 
         <div className='max-w-64  py-4 flex  items-center flex-col border-4 border-red'>
         <img src={myProfile.avatar_url} className='rounded-full h-40 w-40' alt="avatar" />
@@ -57,19 +71,18 @@ function Home({ myProfile}) {
 
         <div >
             <h2 className='bold'>Repos</h2>
+            <Button button_icon={<RiGitRepositoryCommitsLine />} onClick={LoadRepos} button_name="Load repos" />
+            
             <div className='flex justify-center items-center flex-col'>
-                <div className='flex justify-center items-center flex-col'>
-                    <h3 className='bold'>Repo 1</h3>
-                    <p>Repo 1 description</p>
-                </div>
-                <div className='flex justify-center items-center flex-col'>
-                    <h3 className='bold'>Repo 2</h3>
-                    <p>Repo 2 description</p>
-                </div>
-                <div className='flex justify-center items-center flex-col'>
-                    <h3 className='bold'>Repo 3</h3>
-                    <p>Repo 3 description</p>
-                </div>
+                {repos && repos.map((repo) => {
+                    return (
+                        <div key={repo.id} className='flex justify-center items-center border border-red-500 flex-col'>
+                            <h3 className='bold'>{repo?.name}</h3>
+                            <p>{repo?.description}</p>
+                        </div>
+                    )
+                })
+                }
             </div>
         </div>
     </div>
