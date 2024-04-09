@@ -20,7 +20,7 @@ function Repos() {
   return (
     <div className='p-2'>
         <div className='flex  items-center justify-center'>
-            <h2 className='bold text-2xl'>My Projects</h2> 
+            <h2 className='bold text-2xl'>My Github Repositories</h2> 
             </div>
             <div className='grid md:grid-cols-4 gap-4 w-full place-items-center'>
                 {repos && repos.map((repo) => {
@@ -49,7 +49,7 @@ function Repos() {
                             </div>
 
                             </div>
-                            {/* <p> {repo?.topics}</p> */}
+                            <p> {repo?.topics}</p>
                         </div>
 
                     )

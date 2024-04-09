@@ -5,7 +5,8 @@
   margin: 0;
 }
 body{
-  background-image: linear-gradient(to right, #12122b, #203a43, #2c5364);
+  background-color: #010309;
+  /* background-image: linear-gradient(to right, #12122b, #203a43, #2c5364); */
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   color: #fff;
