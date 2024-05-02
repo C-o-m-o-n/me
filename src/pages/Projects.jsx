@@ -14,7 +14,7 @@ import hippoRiders from "/src/assets/hippo-riders.jpeg"
 const images = [
   {"url": jumbofilmz, "link":"https://jumbo-filmz.vercel.app","title":"jumbofilmz"},
   {"url": outbard,"link":"https://outbard.streamlit.app","title":"OutBard"},
-  {"url": pytextbin,"link":"https://pytextbin.comon.tech","title":"PyTextBin"},
+  {"url": pytextbin,"link":"http://pytextbin.comon.tech","title":"PyTextBin"},
   {"url": imagisha,"link":"https://imagisha.vercel.app","title":"imagisha"},
   {"url": LeadersHub,"link":"https://leaders-hub.vercel.app","title":"LeadersHub"},
   {"url": hippoRiders,"link":"https://hippo-riders.vercel.app","title":"HippoRidders"},
