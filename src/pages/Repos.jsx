@@ -30,12 +30,12 @@ function Repos() {
                         <div key={repo.id} className='flex mx-3 flex-col gap-4 bold bg-[#21252d] border-3 border-red-500 w-full p-3 rounded-2xl '>
                             <div className='items-left flex flex-row gap-4'>
                             <img src={repo.owner.avatar_url} className='rounded-full border border-white-500 h-8 w-8' alt="avatar" />
-                            <a className='text-[blue] underline bold' href={repo?.clone_url}>
+                            <a className='text-white text-wrap bold' href={repo?.clone_url}>
                             <h3 className='bold'>{repo?.name}</h3>
                             </a>
                             </div>
 
-                            <p>{repo?.description}</p>
+						{/*<p>{repo?.description}</p>*/}
                             <div className='flex flex-row justify-between items-center gap-3'>
                             <div className='flex flex-row items-center gap-3'>
                                 <FaCodeFork />
@@ -49,7 +49,6 @@ function Repos() {
                             </div>
 
                             </div>
-                            <p> {repo?.topics}</p>
                         </div>
 
                     )
