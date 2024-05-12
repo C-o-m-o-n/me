@@ -6,6 +6,7 @@ import './App.css'
 import Profile from './pages/Profile'
 import Repos from './pages/Repos'
 import Projects from './pages/Projects'
+import Awards from './pages/Awards'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
@@ -17,7 +18,6 @@ function App() {
     .then(res => res.json())
     .then(res => {
       setMyProfile(res) 
-      // console.log(res)
     }
     )
   }, [])
@@ -32,6 +32,7 @@ function App() {
     <TabList>
       <Tab>My Projects</Tab>
       <Tab>my Repos</Tab>
+      <Tab>my Awards</Tab>
     </TabList>
 
     <TabPanel>
@@ -40,6 +41,14 @@ function App() {
     <TabPanel>
 	  <Repos />
     </TabPanel>
+
+	  <TabPanel>
+      <Awards/>
+    </TabPanel>
+    <TabPanel>
+	  <Repos />
+    </TabPanel>
+
   </Tabs>
 	  </div>
   </>

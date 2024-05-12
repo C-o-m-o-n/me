@@ -3,13 +3,11 @@
 /* eslint-disable react/prop-types */
 import {useState} from 'react'
 import Button from '../components/Button'
-// import About from '../components/About'
 import { FaRegHeart } from "react-icons/fa";
 import { IoCallOutline, IoMailOutline } from "react-icons/io5";
 import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 import { CiLocationOn } from "react-icons/ci";
 import { FaGithub, FaXTwitter,FaLinkedin,FaDiscord, } from "react-icons/fa6";
-// import { RiGitRepositoryCommitsLine } from "react-icons/ri";
 
 
 function Profile({ myProfile}) {
@@ -44,30 +42,27 @@ function Profile({ myProfile}) {
 <div className='bold flex md:flex-col  items-center'>
 
         <div className='bold flex flex-row  items-center'>
-            <FaGithub className='m-3'  size={24}/>
-            <p className='hidden md:block bold m-2'><a className='hover:text-[blue] hover:underline' href='https://github.com/C-o-m-o-n'>Github</a></p>
+	  <a className='hover:text-[blue] hover:underline' href='https://github.com/C-o-m-o-n' target='_blank'>
+            <FaGithub className='m-3'  size={24}/> </a>
+      
+	  <p className='hidden md:block bold m-2'><a className='hover:text-[blue] hover:underline' href='https://github.com/C-o-m-o-n' target='_blank'>Github</a></p>
         </div>
 
-        <div className='bold flex flex-row  items-center'>
-            <FaXTwitter className='m-3' size={24}/>
-            <p className='hidden md:block bold m-2'><a className='hover:text-[blue] hover:underline' href='https://x.com/C_o_m_o_n'>Twitter</a></p>
+        <div className='bold flex flex-row  items-center'><a className='hover:text-[blue] hover:underline' href='https://x.com/C_o_m_o_n' target='_blank' ><FaXTwitter className='m-3' size={24}/></a>
+            
+            <p className='hidden md:block bold m-2'><a className='hover:text-[blue] hover:underline' href='https://x.com/C_o_m_o_n' target='_blank' >Twitter</a></p>
         </div>
-        <div className='bold flex flex-row  items-center'>
-            <FaLinkedin className='m-3' size={24}/>
-            <p className='hidden md:block bold m-2'><a className='hover:text-[blue] hover:underline' href='https://linkedin.com/c-o-m-o-n'>LinkeIn</a></p>
+        <div className='bold flex flex-row  items-center'><a className='hover:text-[blue] hover:underline' href='https://linkedin.com/in/c-o-m-o-n' target='_blank' > <FaLinkedin className='m-3' size={24}/></a>
+           
+            <p className='hidden md:block bold m-2'><a className='hover:text-[blue] hover:underline' href='https://linkedin.com/in/c-o-m-o-n' target='_blank' >LinkeIn</a></p>
         </div>
-        <div className='bold flex flex-row  items-center'>
-            <FaDiscord className='m-3' size={24}/>
-            <p className='hidden md:block bold m-2'><a className='hover:text-[blue] hover:underline' href='https://discord.gg.com/eqSU46Y7xW'>Discord</a></p>
+        <div className='bold flex flex-row  items-center'><a className='hover:text-[blue] hover:underline' href='https://discord.gg.com/eqSU46Y7xW' target='_blank'><FaDiscord className='m-3' size={24}/></a>
+            
+            <p className='hidden md:block bold m-2'><a className='hover:text-[blue] hover:underline' href='https://discord.gg.com/eqSU46Y7xW' target='_blank'>Discord</a></p>
         </div>
 </div>
 
         </div>
-
-
-{/* <Repos /> */}
-
-        
     </div>
     
   )
